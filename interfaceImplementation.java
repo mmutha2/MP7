@@ -29,6 +29,7 @@ public class interfaceImplementation implements ActionListener {
 
     private final String[] buttonValue = { "0", "1", "2", "3", "4", "5", "6", "7", "8", "9" };
 
+    // Establish calculator framework properties, such as size and shape.
     public interfaceImplementation() {
         frame = new JFrame("MP 7 Calculator");
         text = new JTextArea(2, 27);
@@ -40,6 +41,10 @@ public class interfaceImplementation implements ActionListener {
         }
         
         mp7calc = new mainCalculator();
+        
+        
+        // Create the individual buttons and assign them their representative signs.
+        // Additionally, we set the background colors with the setBackground function.
         butAddition = new JButton("+"); butAddition.setBackground(Color.lightGray); 
         butMultiplication = new JButton("x"); butMultiplication.setBackground(Color.lightGray); 
         butSubtraction = new JButton("-"); butSubtraction.setBackground(Color.lightGray); 
